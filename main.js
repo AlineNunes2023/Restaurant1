@@ -1,8 +1,12 @@
 //getelementbyid
 const pegavalorDaConta = document.getElementById("valorConta");
 
-function funcaoTeste() {
-console.log('estou funcionando')
-}
+function exibirValorDaConta() {
+console.log(pegavalorDaConta.value);
 
-funcaoTeste();
+
+}
+pegavalorDaConta.addEventListener("change", exibirValorDaConta)
+//addEventListener
+
+
