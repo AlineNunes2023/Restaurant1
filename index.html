@@ -11,22 +11,31 @@
 <body>
 <section>
     <h2>Pizzaria</h2>
-    <form>
+    <form id="form">
 <fieldset>
-<input id="valorConta" placeholder="Valor Total da Conta">
+<input id="valorConta" placeholder="Valor Total da Conta" required>
+
 </fieldset>
 <fieldset>
-    <input placeholder="Valor da taxa">
+
+    <input id="ValorTaxa" placeholder="Valor Total da taxa" required>
+
     </fieldset>
     <fieldset>
-        <input placeholder="Quantidade de pagantes">
+        <input id="quantidadedePessoas" placeholder="Quantidade de pagantes" required>
+
         </fieldset>
         <fieldset>
-            <button>Enviar</button>
+            <button onclick="formEvent()" id="buttonSend">Enviar</button>
         </fieldset>
     </form>
 </section>
+<section>
+<div id="resultado">
 
+
+</div>
+</section>
     <script src="/main.js"></script>
 </body>
 
